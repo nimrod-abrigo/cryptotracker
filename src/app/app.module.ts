@@ -7,13 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
 
 import { AppComponent } from './app.component';
-import { TableComponent } from './table/table.component';
+import { ListComponent } from './list/list.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TableComponent
+    ListComponent
   ],
   imports: [
     BrowserModule,
