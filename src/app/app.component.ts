@@ -15,9 +15,14 @@ export class AppComponent {
 
   posts:Observable<any[]>;
 
+  ngOnInit() {
+    this.getPosts();
+  }
+
   constructor(private http:HttpClient){}
 
   getPosts(){
-    this.posts = this.http.get<Coin[]>(this.ROOT_URL+'/ticker/ethereum');
+    this.posts = this.http.get<Coin[]>(this.ROOT_URL+'/ticker');
+    
   }
 }
