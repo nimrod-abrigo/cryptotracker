@@ -14,7 +14,7 @@ export class ListComponent implements OnInit {
   constructor(private appService:AppService){}
 
   ngOnInit() {
-    this.coins = this.appService.getPosts();
+    this.coins = this.appService.getCoins();
   }
 
 }
