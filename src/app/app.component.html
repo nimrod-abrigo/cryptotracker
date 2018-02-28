@@ -1,18 +1,5 @@
 <div class="container">
-    <table class="table table-hover">
-        <tr>
-            <th>Name</th>
-            <th>symbol</th>
-            <th>Price(USD)</th>
-            <th>%Change (24hr)</th>
-        </tr>
-        <tr *ngFor="let post of posts | async">
-            <td>{{post.name}}</td>
-            <td>{{post.symbol}}</td>
-            <td>{{post.price_usd}}</td>
-            <td>{{post.percent_change_24h}} %</td>
-        </tr>
-    </table>
+    <router-outlet></router-outlet>
 </div>
 
 
