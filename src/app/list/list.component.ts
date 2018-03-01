@@ -10,6 +10,7 @@ import { AppService } from '../app.service';
 export class ListComponent implements OnInit {
 
   coins:Observable<any[]>;
+  coin:Observable<any[]>;
 
   constructor(private appService:AppService){}
 

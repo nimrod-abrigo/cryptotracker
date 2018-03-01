@@ -5,10 +5,10 @@
         <th>Price(USD)</th>
         <th>%Change (24hr)</th>
     </tr>
-      <tr *ngFor="let coin of coins | async">
-          <td><a routerLink="/coin/{{coin.name}}">{{coin.name}}</a></td>
-          <td>{{coin.symbol}}</td>
-          <td>{{coin.price_usd}}</td>
-          <td>{{coin.percent_change_24h}} %</td>
-      </tr>
+    <tr *ngFor="let coin of coins | async">
+        <td>{{coin.name}}</td>
+        <td>{{coin.symbol}}</td>
+        <td>{{coin.price_usd}}</td>
+        <td>{{coin.percent_change_24h}} %</td>
+    </tr>
 </table>
